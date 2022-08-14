@@ -5,7 +5,7 @@
     --pane-bg-color: #250c3e; /* background color for panes e.g. search bar and link containers */
     --button-color: #ff6000; /* background color for buttons */
     --button-fg-color: black;
-    --text-input-underline-unfocused: #920036; /* underline color for text input when not focused */
+    --text-input-underline-unfocused: #7b6d84; /* underline color for text input when not focused */
     --text-input-underline-focused: var(--fg-highlight); /* underline color for text input when focused */
 }
 
