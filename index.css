@@ -1,12 +1,12 @@
 :root {
-    --bg-color: #282828; /* background color */
-    --fg-color: #e2d3ba; /* default foreground color */
-    --fg-highlight: #d8a657; /* foreground color for "highlighted" items */
-    --pane-bg-color: #32302f; /* background color for panes e.g. search bar and link containers */
-    --button-color: #45403d; /* background color for buttons */
-    --text-input-underline-unfocused: #7c6f64; /* underline color for text input when not focused */
+    --bg-color: #120024; /* background color */
+    --fg-color: #c4c0c0; /* default foreground color */
+    --fg-highlight: #ff6000; /* foreground color for "highlighted" items */
+    --pane-bg-color: #250c3e; /* background color for panes e.g. search bar and link containers */
+    --button-color: #ff6000; /* background color for buttons */
+    --button-fg-color: black;
+    --text-input-underline-unfocused: #920036; /* underline color for text input when not focused */
     --text-input-underline-focused: var(--fg-highlight); /* underline color for text input when focused */
-    --shadow-color: #1d2021; /* shadow color */
 }
 
 body {
@@ -29,14 +29,14 @@ body {
 
 #user-greeting {
     margin-top: 30px;
-    font-size: 21px;
-    font-weight: normal;
+    font-size: 25px;
+    font-weight: bold;
     color: var(--fg-color);
 }
 
 #current-time {
     font-size: 35px;
-    font-weight: normal;
+    font-weight: bold;
     color: var(--fg-highlight);
 }
 
@@ -49,28 +49,21 @@ body {
     padding: 10px;
     background-color: var(--pane-bg-color);
     border-radius: 8px;
-    box-shadow: 5px 5px 3px 0px var(--shadow-color);
     box-sizing: border-box;
     gap: 10px;
     font-size: 14px;
+    border: 0.5px dotted var(--button-color);
 }
 
 .button {
     background-color: var(--button-color);
-    color: var(--fg-color);
+    color: var(--button-fg-color);
     border-radius: 8px;
     border-style: none;
 }
 
 .button:active {
-    background-color: #5a524c;
-}
-
-#search-engine-select {
-    padding: 0.6em 10px;
-    border-right: 10px solid transparent;
-    font-family: inherit;
-    font-size: inherit;
+    background-color: green;
 }
 
 #search-input-cont {
@@ -91,6 +84,7 @@ body {
     width: 100%;
     font-family: inherit;
     font-size: inherit;
+    font-weight: bold;
 }
 
 #search-input:focus {
@@ -101,6 +95,7 @@ body {
     padding: 0.6em 12px;
     font-family: inherit;
     font-size: inherit;
+    font-weight: bold;
 }
 
 #links {
@@ -116,17 +111,19 @@ body {
     padding: 10px;
     background-color: var(--pane-bg-color);
     border-radius: 8px;
-    box-shadow: 5px 5px 3px 0px var(--shadow-color);
     flex: 1 1 0%;
 } 
 
 .link-group-title {
+    font-size: x-large;
+    font-weight: bold;
     color: var(--fg-highlight);
     margin-bottom: 10px;
 }
 
 ul {
     list-style-type: none;
+    font-weight: bold;
     padding: 0;
     margin: 0;
 }
