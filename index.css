@@ -29,12 +29,16 @@ body {
 
 #user-greeting {
     margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 25px;
     font-weight: bold;
     color: var(--fg-color);
 }
 
 #current-time {
+    margin-left: auto;
+    margin-right: auto;
     font-size: 35px;
     font-weight: bold;
     color: var(--fg-highlight);
@@ -52,7 +56,6 @@ body {
     box-sizing: border-box;
     gap: 10px;
     font-size: 14px;
-    border: 0.5px dotted var(--button-color);
 }
 
 .button {
