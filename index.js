@@ -6,13 +6,13 @@ function updateClock() {
     date.toDateString() + " - " + date.toLocaleTimeString([], {hour12: false})
     const hour = date.getHours()
     if (hour < 5 || hour >= 18) {
-        document.getElementById("time-greeting").innerText = "Good evening."
+        document.getElementById("time-greeting").innerText = "Good evening"
     }
     else if (hour < 12) {
-        document.getElementById("time-greeting").innerText = "Good morning."
+        document.getElementById("time-greeting").innerText = "Good morning"
     }
     else {
-        document.getElementById("time-greeting").innerText = "Good afternoon."
+        document.getElementById("time-greeting").innerText = "Good afternoon"
     }
 }
 
