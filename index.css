@@ -126,6 +126,7 @@ body {
 
 ul {
     list-style-type: none;
+    font-size: medium;
     font-weight: bold;
     padding: 0;
     margin: 0;
