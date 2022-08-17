@@ -33,7 +33,7 @@ body {
     margin-right: auto;
     font-size: 25px;
     font-weight: bold;
-    color: var(--fg-color);
+    color: #9f1044;
 }
 
 #current-time {
