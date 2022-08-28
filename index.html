@@ -1,47 +1,59 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Startpage</title>
-        <link rel="stylesheet" href="index.css">
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
-    </head>
-    <body>
-        <div id="main-container">
-            <div id="user-greeting">
-                <span id="time-greeting"></span> 
+
+<head>
+    <title>Startpage</title>
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+</head>
+
+<body>
+    <div id="main-container">
+        <div id="user-greeting">
+            <span id="time-greeting"></span>
+        </div>
+        <div id="current-time">
+            <span id="current-time-text"></span></h1>
+        </div>
+        <div id="search">
+            <div id="search-input-cont">
+                <input id="search-input" placeholder="Search the web..." autofocus />
             </div>
-            <div id="current-time">
-                <span id="current-time-text"></span></h1>
-            </div>
-            <div id="search">
-                <div id="search-input-cont">
-                    <input id="search-input" placeholder="Search the web..." autofocus/>
-                </div>
-                <div id="search-button-cont">
-                    <button class="button" id="search-button" onclick="doSearch()">Search</button>
-                </div>
-            </div>
-            <div id="links">
-                <div class="link-group" id="general">
-                    <ul>
-                        <li class="link-group-title">~/general</li>
-                        <li><a href="https://www.youtube.com"><span class="link-text"> > youtube</span></a></li>
-                        <li><a href="https://www.reddit.com"><span class="link-text"> > reddit</span></a></li>
-                        <li><a href="https://translate.google.com/"><span class="link-text"> > translate</span></a></li>
-                        <li><a href="https://www.github.com/lvntcnylmz"><span class="link-text"> > github</span></a></li>
-                    </ul>
-                </div>
-                <div class="link-group" id="dev">
-                    <ul>
-                        <li class="link-group-title">~/utils</li>
-                        <li><a href="https://wiki.archlinux.org"><span class="link-text"> > arch wiki</span></a></li>
-                        <li><a href="https://mail.proton.me"><span class="link-text"> > proton mail</span></a></li>
-                        <li><a href="https://www.google.com/drive/"><span class="link-text"> > drive</span></a></li>
-                        <li><a href="https://itsfoss.com/"><span class="link-text"> > linux</span></a></li>
-                    </ul>
-                </div>
+            <div id="search-button-cont">
+                <button class="button" id="search-button" onclick="doSearch()">Search</button>
             </div>
         </div>
-    </body>
-    <script src="index.js"></script>
+        <div id="links">
+            <div class="link-group">
+                <ul>
+                    <li class="link-group-title">~/general</li>
+                    <li><a href="https://www.youtube.com"><span class="link-text"> > youtube</span></a></li>
+                    <li><a href="https://www.reddit.com"><span class="link-text"> > reddit</span></a></li>
+                    <li><a href="https://www.github.com/lvntcnylmz"><span class="link-text"> > github</span></a></li>
+                    <li><a href="https://gitlab.com/lvntcylmz"><span class="link-text"> > gitlab</span></a></li>
+                </ul>
+            </div>
+            <div class="link-group">
+                <ul>
+                    <li class="link-group-title">~/utils</li>
+                    <li><a href="https://wiki.archlinux.org"><span class="link-text"> > arch wiki</span></a></li>
+                    <li><a href="https://mail.proton.me"><span class="link-text"> > proton mail</span></a></li>
+                    <li><a href="https://www.deepl.com/translator"><span class="link-text"> > deepl</span></a></li>
+                    <li><a href="https://dzone.com/"><span class="link-text"> > dzone</span></a></li>
+                </ul>
+            </div>
+            <div class="link-group">
+                <ul>
+                    <li class="link-group-title">~/dev</li>
+                    <li><a href="https://www.linux.com/"><span class="link-text"> > linux</span></a></li>
+                    <li><a href="https://www.tecmint.com/"><span class="link-text"> > tecmint</span></a></li>
+                    <li><a href="https://www.omglinux.com/"><span class="link-text"> > omglinux</span></a></li>
+                    <li><a href="https://itsfoss.com/"><span class="link-text"> > linux</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+
 </html>
