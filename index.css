@@ -11,7 +11,7 @@
 
 body {
     background-color: var(--bg-color);
-    font-family: "Canterell", sans-serif;
+    font-family: "Inter", sans-serif;
     margin: 0px;
     min-height: 100vh;
 }
