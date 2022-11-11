@@ -3,7 +3,7 @@ document.onreadystatechange = updateClock()
 function updateClock() {
     const date = new Date()
     document.getElementById("current-time-text").innerText =
-    date.toDateString() + " - " + date.toLocaleTimeString([], {hour12: false})
+        date.toDateString() + " - " + date.toLocaleTimeString([], { hour12: false })
     const hour = date.getHours()
     if (hour < 5 || hour >= 18) {
         document.getElementById("time-greeting").innerText = "Good evening"
@@ -29,3 +29,9 @@ searchInput.addEventListener("keypress", function onEvent(event) {
         document.getElementById("search-button").click();
     }
 })
+
+fetch("https://wttr.in/Clausthal-Zellerfeld?format=%C+%c+%t+%w+%m")
+    .then(response => response.text())
+    .then(text => {
+        document.getElementById("weather-text").innerHTML = text;
+    })
