@@ -28,12 +28,21 @@ body {
 }
 
 #user-greeting {
-    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
     font-size: 25px;
     font-weight: bold;
     color: #00A878;
+    padding: 2px;
+}
+
+#weather {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    font-weight: bold;
+    color: #00A878;
+    padding: 2px;
 }
 
 #current-time {
@@ -42,6 +51,15 @@ body {
     font-size: 35px;
     font-weight: bold;
     color: var(--fg-highlight);
+    padding: 2px;
+}
+
+#intro {
+    background-color: var(--pane-bg-color);
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    box-sizing: border-box;
 }
 
 #search {
@@ -49,7 +67,6 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    margin-top: 10px;
     padding: 10px;
     background-color: var(--pane-bg-color);
     border-radius: 8px;
