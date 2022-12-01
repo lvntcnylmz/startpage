@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Startpage</title>
+    <link href="/public/css/output.css" rel="stylesheet">
+    <link rel="icon" href="data:,">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+</head>
+
+<body class="bg-purple font-sans" onload="getWeatherData('Clausthal')">
+    <div class="flex h-screen justify-center items-center">
+        <div class="w-1/2 grid grid-cols-3 gap-x-2 content-center">
+            <div class="weather grid grid-flow-row bg-light-purple rounded-lg">
+                <div class="weather-image overflow-hidden rounded-tl-lg rounded-tr-lg">
+                    <img src="/assest/disco.png">
+                </div>
+                <div class="weather-data m-3 text-green bg-purple rounded-lg font-bold text-center">
+                    <div class="mx-5 mt-2">
+                        Status: <span id="weather-description"></span>
+                    </div>
+                    <div class="mx-5">
+                        Temp: <span id="weather-temperature"></span>°C 
+                    </div>
+                    <div class="mx-5">
+                        Feels: <span id="weather-feel"></span>°C 
+                    </div>
+                    <div class="mx-5">
+                        Moon: <span id="moon-phase" ></span> <span id="moon-phase-logo"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-2 bg-purple-900 rounded-lg">
+                <div class="grid gap-2">
+                    <div class="p-3 text-4xl font-bold text-center text-orange bg-light-purple rounded-lg">
+                        <span id="current-time-text"></span>
+                    </div>
+                    <div class="flex flex-row gap-3 bg-light-purple rounded-lg p-3">
+                        <input id="search-input" class="p-2 basis-3/4 font-bold text-gray outline-none border-none bg-no-repeat bg-purple w-full border-y-2 rounded-lg placeholder-green placeholder-opacity-75" placeholder="Search the web..." autofocus
+                            (click)="searchWithEnter()">
+                        <button class="text-purple bg-orange basis-1/4 font-bold rounded-lg" type="button" id="search-button"
+                            (click)="search()">search</button>
+                    </div>
+                    <div class="p-3 grid grid-cols-3 gap-3 text-gray bg-light-purple rounded-lg">
+                        <div class=" bg-purple rounded-lg ">
+                            <div class="font-bold">
+                                <div class="text-3xl text-orange m-2">~/general</div>
+                                <ul>
+                                    <li class="mb-1 ml-5">
+                                        <a href="https://www.youtube.com" class="text-slate-400 hover:text-sky-400"> > youtube</a>
+                                    </li>
+                                    <li class="mb-1 ml-5">
+                                        <a href="https://www.reddit.com" class="hover:text-orange-600"> > reddit</a>
+                                    </li>
+                                    <li class="mb-1 ml-5">
+                                        <a href="https://www.github.com" class="hover:text-orange-600"> > github</a>
+                                    </li>
+                                    <li class="mb-2 ml-5">
+                                        <a href="https://gitlab.com" class="hover:text-orange-600"> > gitlab</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class=" bg-purple rounded-lg">
+                            <div class="font-bold">
+                                <div class="text-3xl text-orange m-2">~/utils</div>
+                                <ul>
+                                    <li class="mb-1 ml-5">
+                                        <a href="https://wiki.archlinux.org" class="hover:text-orange-600"> > arch wiki</a>
+                                    </li>
+                                    <li class="mb-1 ml-5">
+                                        <a href="https://mail.proton.me" class="hover:text-orange-600"> > proton mail</a>
+                                    </li>
+                                    <li class="mb-1 ml-5">
+                                        <a href="https://www.deepl.com/translator" class="hover:text-orange-600"> > deepl</a>
+                                    </li>
+                                    <li class="mb-2 ml-5">
+                                        <a href="https://monkeytype.com/" class="hover:text-orange-600"> > typing</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class=" bg-purple rounded-lg">
+                            <div class="font-bold">
+                                <div class="text-3xl text-orange m-2">~/dev</div>
+                                <ul>
+                                    <li class="mb-1 ml-5">
+                                        <a href="https://dzone.com/" class="hover:text-orange-600"> > dzone</a>
+                                    </li>
+                                    <li class="mb-1 ml-5">
+                                        <a href="https://www.linux.com/" class="hover:text-orange-600"> > linux</a>
+                                    </li>
+                                    <li class="mb-1 ml-5">
+                                        <a href="https://itsfoss.com/" class="hover:text-orange-600"> > itsfoss</a>
+                                    </li>
+                                    <li class="mb-2 ml-5">
+                                        <a href="http://localhost:8080/swagger-ui/index.html" class="hover:text-orange-600"> > swagger</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
