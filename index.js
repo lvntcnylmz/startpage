@@ -14,15 +14,6 @@ function doSearch() {
     window.location.href = `https://www.duckduckgo.com/?q=${query}`
 }
 
-function invert() {
-    if (document.getElementById('main-container').style.filter === "invert(1)") {
-        document.getElementById('main-container').style.filter = "invert(0)"
-    }
-    else {
-        document.getElementById('main-container').style.filter = "invert(1)"
-    }
-}
-
 const searchInput = document.getElementById("search-input")
 searchInput.addEventListener("keypress", function onEvent(event) {
     if (event.key === "Enter") {
