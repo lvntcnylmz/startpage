@@ -1,0 +1,44 @@
+body, .container{
+    background: #120024;
+    color: #ff6000;
+    font-weight: bold;
+}
+
+.date-weather, .search, .col{
+    background: #250c3e;
+}
+
+h3{
+    color: #ff6000;
+}
+
+a{
+    color: #c4c0c0;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #047e63;
+}
+
+input{
+    background: #120024;
+    border: none;
+    outline:none;
+    color: #047e63;
+    width: 100%;
+    font-weight: bold;
+}
+
+.btn{
+    background: #ff6000;
+    color: #120024;
+    font-weight: bold;
+    width: 100%;
+}
+
+.btn:hover{
+    background: #047e63;
+    color: #120024;
+    font-weight: bold;
+}

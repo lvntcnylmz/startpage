@@ -1,116 +1,67 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Startpage</title>
-    <link href="./css/output.css" rel="stylesheet">
-    <link rel="icon" href="data:,">
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-purple font-sans" onload="getWeatherData('Clausthal')">
-    <div class="flex h-screen justify-center items-center">
-        <div class="w-1/2 grid grid-cols-3 gap-x-2 content-center">
-            <div class="weather grid grid-flow-row bg-light-purple rounded-lg">
-                <div class="weather-image overflow-hidden rounded-tl-lg rounded-tr-lg">
-                    <img src="./assets/disco.png">
+<body onload="getWeatherData('Clausthal')">
+    <div class="position-absolute top-50 start-50 translate-middle w-50">
+        <div class="date-weather my-2 p-3 rounded-3 text-center">
+            <h1 id="current-time-text"></h1>
+            <h1 id="weatherData"></h1>
+        </div>
+        <div class="search my-2 p-3 rounded-3 text-center">
+            <div class="row">
+                <div class="search-bar col-10">
+                    <input type="text" placeholder="Search the web..." class="p-2 rounded-3 text-center">
                 </div>
-                <div class="weather-data m-3 text-green bg-purple rounded-lg font-bold text-center">
-                    <div class="mx-5 mt-2">
-                        Status: <span id="weather-description"></span>
+                <div class="search-button col-2">
+                    <button class="btn rounded-3" type="button" id="search-button"
+                onclick="doSearch()">search</button>
+                </div>
+                
+              </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col me-1 p-3 rounded-3">
+                    <div class="container rounded-3 p-2">
+                        <h3>~/general</h3>
+                        <p class="mx-3 my-1"><a href="https://www.youtube.com"> > youtube</a></p>
+                        <p class="mx-3 my-1"><a href="https://www.reddit.com"> > reddit</a></p>
+                        <p class="mx-3 my-1"><a href="https://www.github.com"> > github</a></p>
+                        <p class="mx-3 my-1"><a href="https://gitlab.com"> > gitlab</a></p>
                     </div>
-                    <div class="mx-5">
-                        Temp: <span id="weather-temperature"></span>°C
-                    </div>
-                    <div class="mx-5">
-                        Feels: <span id="weather-feel"></span>°C
-                    </div>
-                    <div class="mx-5">
-                        Moon: <span id="moon-phase"></span> <span id="moon-phase-logo"></span>
+
+                </div>
+                <div class="col mx-1 p-3 rounded-3">
+                    <div class="container rounded-3 p-2">
+                        <h3>~/utils</h3>
+                        <p class="mx-3 my-1"><a href="https://wiki.archlinux.org"> > arch wiki</a></p>
+                        <p class="mx-3 my-1"><a href="https://mail.proton.me"> > proton mail</a></p>
+                        <p class="mx-3 my-1"><a href="https://www.deepl.com/translator"> > deepl</a></p>
+                        <p class="mx-3 my-1"><a href="https://monkeytype.com"> > typing</a></p>
                     </div>
                 </div>
-            </div>
-            <div class="col-span-2 bg-purple-900 rounded-lg">
-                <div class="grid gap-2">
-                    <div class="p-3 text-4xl font-bold text-center text-orange bg-light-purple rounded-lg">
-                        <span id="current-time-text"></span>
-                    </div>
-                    <div class="flex flex-row gap-3 bg-light-purple rounded-lg p-3">
-                        <input id="search-input"
-                            class="p-2 basis-3/4 font-bold text-gray outline-none border-none bg-no-repeat bg-purple w-full border-y-2 rounded-lg placeholder-green placeholder-opacity-75"
-                            placeholder="Search the web..." autofocus>
-                        <button class="text-purple bg-orange basis-1/4 font-bold rounded-lg" type="button"
-                            id="search-button" onclick="doSearch()">search</button>
-                    </div>
-                    <div class="p-3 grid grid-cols-3 gap-3 text-gray bg-light-purple rounded-lg">
-                        <div class=" bg-purple rounded-lg ">
-                            <div class="font-bold">
-                                <div class="text-3xl text-orange m-2">~/general</div>
-                                <ul>
-                                    <li class="mb-1 ml-5">
-                                        <a href="https://www.youtube.com" class="hover:underline underline-offset-8 decoration-orange hover:text-orange"> >
-                                            youtube</a>
-                                    </li>
-                                    <li class="mb-1 ml-5">
-                                        <a href="https://www.reddit.com" class="hover:underline underline-offset-8 decoration-orange hover:text-orange"> > reddit</a>
-                                    </li>
-                                    <li class="mb-1 ml-5">
-                                        <a href="https://www.github.com" class="hover:underline underline-offset-8 decoration-orange hover:text-orange"> > github</a>
-                                    </li>
-                                    <li class="mb-2 ml-5">
-                                        <a href="https://gitlab.com" class="hover:underline underline-offset-8 decoration-orange hover:text-orange"> > gitlab</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class=" bg-purple rounded-lg">
-                            <div class="font-bold">
-                                <div class="text-3xl text-orange m-2">~/utils</div>
-                                <ul>
-                                    <li class="mb-1 ml-5">
-                                        <a href="https://wiki.archlinux.org" class="hover:underline underline-offset-8 decoration-orange hover:text-orange"> > arch
-                                            wiki</a>
-                                    </li>
-                                    <li class="mb-1 ml-5">
-                                        <a href="https://mail.proton.me" class="hover:underline underline-offset-8 decoration-orange hover:text-orange"> > proton
-                                            mail</a>
-                                    </li>
-                                    <li class="mb-1 ml-5">
-                                        <a href="https://www.deepl.com/translator" class="hover:underline underline-offset-8 decoration-orange hover:text-orange"> >
-                                            deepl</a>
-                                    </li>
-                                    <li class="mb-2 ml-5">
-                                        <a href="https://monkeytype.com/" class="hover:underline underline-offset-8 decoration-orange hover:text-orange"> > typing</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class=" bg-purple rounded-lg">
-                            <div class="font-bold">
-                                <div class="text-3xl text-orange m-2">~/dev</div>
-                                <ul>
-                                    <li class="mb-1 ml-5">
-                                            <a href="https://leetcode.com/" class="hover:underline underline-offset-8 decoration-orange hover:text-orange"> > leetcode</a>
-                                    </li>
-                                    <li class="mb-1 ml-5">
-                                        <a href="https://www.hackerrank.com/dashboard"
-                                            class="hover:underline underline-offset-8 decoration-orange hover:text-orange"> > hackerrank</a>
-                                    </li>
-                                    <li class="mb-1 ml-5">
-                                        <a href="https://dzone.com/" class="hover:underline underline-offset-8 decoration-orange hover:text-orange"> > dzone</a>
-                                    </li>
-                                    <li class="mb-2 ml-5">
-                                        <a href="https://itsfoss.com/" class="hover:underline underline-offset-8 decoration-orange hover:text-orange"> > itsfoss</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                <div class="col ms-1 p-3 rounded-3">
+                    <div class="container rounded-3 p-2">
+                        <h3>~/dev</h3>
+                        <p class="mx-3 my-1"><a href="https://leetcode.com">> leetcode</a></p>
+                        <p class="mx-3 my-1"><a href="https://www.hackerrank.com/dashboard"> > hackerrank</a></p>
+                        <p class="mx-3 my-1"><a href="https://dzone.com"> > dzone</a></p>
+                        <p class="mx-3 my-1"><a href="https://itsfoss.com"> > itsfoss</a></p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </body>
-<script src="./js/index.js"></script>
+<script src="index.js"></script>
 
 </html>

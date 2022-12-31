@@ -1,11 +1,10 @@
 {
   "name": "startpage",
   "version": "1.0.0",
-  "description": "Simple startpage",
+  "description": "Startpage made with Bootstrap and JS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "css": "npx tailwindcss -i ./css/input.css -o ./css/output.css --watch"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -17,7 +16,7 @@
     "url": "https://github.com/lvntcnylmz/startpage/issues"
   },
   "homepage": "https://github.com/lvntcnylmz/startpage#readme",
-  "devDependencies": {
-    "tailwindcss": "^3.2.4"
+  "dependencies": {
+    "bootstrap": "^5.2.3"
   }
 }
