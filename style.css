@@ -1,44 +1,55 @@
-body, .container{
+body,
+.container {
     background: #120024;
     color: #ff6000;
     font-weight: bold;
 }
 
-.date-weather, .search, .col{
-    background: #250c3e;
-}
-
-h3{
+h3 {
     color: #ff6000;
 }
 
-a{
+a {
     color: #c4c0c0;
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     color: #047e63;
 }
 
-input{
+input {
     background: #120024;
     border: none;
-    outline:none;
+    outline: none;
     color: #047e63;
     width: 100%;
     font-weight: bold;
 }
 
-.btn{
+.btn {
     background: #ff6000;
     color: #120024;
     font-weight: bold;
     width: 100%;
 }
 
-.btn:hover{
+.btn:hover {
     background: #047e63;
     color: #120024;
     font-weight: bold;
+}
+
+.date-weather-info   {
+    background: #120024;
+}
+
+.main{
+    width: 640px;
+}
+
+.date-weather,
+.search,
+.col {
+    background: #250c3e;
 }
