@@ -10,4 +10,5 @@ To get the weather information for your city, simply replace the parameter in th
 Example: `getWeatherData('Clausthal')` => `getWeatherData('New York')`
 
 ### Screenshot
-![Screenshot 2023-01-01 at 01-55-25 Startpage](https://user-images.githubusercontent.com/19970595/210158437-85fbb1aa-7025-4a73-8089-eca73b8fa79d.png)
+
+![Screenshot 2023-01-02 at 10-40-46 Startpage](https://user-images.githubusercontent.com/19970595/210214951-2b26faab-7a68-4de1-8ae8-363984fad764.png)
