@@ -29,10 +29,9 @@ input {
 }
 
 .btn {
-    background: #ff6000;
-    color: #120024;
+    color: #ff6000;
+    background: #120024;
     font-weight: bold;
-    width: 100%;
 }
 
 .btn:hover {
