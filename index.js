@@ -1,3 +1,5 @@
+document.onreadystatechange = updateClock();
+
 function updateClock() {
     const date = new Date()
     document.getElementById("current-time-text").innerText =
