@@ -1,8 +1,18 @@
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Medium.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
 body,
 .container {
     background: #120024;
     color: #ff6000;
     font-weight: bold;
+    font-family: 'JetBrains Mono';
 }
 
 h3 {
@@ -14,7 +24,7 @@ a {
     text-decoration: none;
 }
 
-h1,
+h2,
 a:hover {
     color: #047e63;
 }
