@@ -10,31 +10,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body onload="getWeatherData('Clausthal-Zellerfeld')">
+<body onload="getWeatherData('Luleburgaz')">
     <div class="main position-absolute top-50 start-50 translate-middle">
         <div class="date-weather my-2 p-3 rounded-3 text-center">
             <div class="date-weather-info rounded-3 p-2">
-                <h2 id="current-time-text"></h1>
+                <h2 id="current-time-text"></h2>
                 <h3 id="weatherData"></h3>
             </div>
         </div>
         <div class="search my-2 p-3 rounded-3">
             <div class="row">
                 <div class="search-bar col-10">
-                    <input type="text" placeholder="Search the web..." class="p-2 rounded-3" id="search-input" autofocus>
+                    <input type="text" placeholder="Search the web..." class="p-2 rounded-3" id="search-input"
+                        autofocus>
                 </div>
                 <div class="search-button col-2">
                     <button class="btn rounded-3 p-2" type="button" id="search-button"
-                onclick="doSearch()">search</button>
+                        onclick="doSearch()">search</button>
                 </div>
-                
-              </div>
+
+            </div>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col me-1 p-3 rounded-3">
                     <div class="container rounded-3 p-2">
-                        <h3>~/general</h3>
+                        <h4 class="mx-2">~/general</h4>
                         <p class="mx-3 my-1"><a href="https://www.youtube.com">> youtube</a></p>
                         <p class="mx-3 my-1"><a href="https://www.reddit.com">> reddit</a></p>
                         <p class="mx-3 my-1"><a href="https://www.github.com">> github</a></p>
@@ -44,7 +45,7 @@
                 </div>
                 <div class="col mx-1 p-3 rounded-3">
                     <div class="container rounded-3 p-2">
-                        <h3>~/utils</h3>
+                        <h4 class="mx-2">~/utils</h4>
                         <p class="mx-3 my-1"><a href="https://wiki.archlinux.org">> arch wiki</a></p>
                         <p class="mx-3 my-1"><a href="https://mail.proton.me">> mail</a></p>
                         <p class="mx-3 my-1"><a href="https://www.deepl.com/translator">> deepl</a></p>
@@ -53,7 +54,7 @@
                 </div>
                 <div class="col ms-1 p-3 rounded-3">
                     <div class="container rounded-3 p-2">
-                        <h3>~/dev</h3>
+                        <h4 class="mx-2">~/dev</h4>
                         <p class="mx-3 my-1"><a href="https://leetcode.com">> leetcode</a></p>
                         <p class="mx-3 my-1"><a href="https://www.hackerrank.com/dashboard">> hackerrank</a></p>
                         <p class="mx-3 my-1"><a href="https://www.codewars.com/dashboard">> codewars</a></p>

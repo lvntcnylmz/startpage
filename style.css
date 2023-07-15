@@ -1,65 +1,73 @@
+:root {
+    --bg-color: #1a1b26;
+    --fg-color: #a9b1d6;
+    --module-bg-color: #343b58;
+    --highlight-color: #bb9af7;
+    --border-color: #24283b;
+    --title-color: #7aa2f7
+}
+
 @font-face {
     font-family: 'JetBrains Mono';
-    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Medium.woff2') format('woff2'),
-      url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Medium.woff') format('woff');
+    src: url(https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Medium.woff2) format("woff2"), url(https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Medium.woff) format("woff");
     font-weight: 500;
     font-style: normal;
-    font-display: swap;
-  }
+    font-display: swap
+}
 
 body,
 .container {
-    background: #120024;
-    color: #ff6000;
-    font-weight: bold;
-    font-family: 'JetBrains Mono';
-}
-
-h3 {
-    color: #ff6000;
-}
-
-a {
-    color: #7C72A0;
-    text-decoration: none;
+    background-color: var(--bg-color);
+    color: var(--highlight-color);
+    font-weight: 700;
+    font-family: 'JetBrains Mono'
 }
 
 h2,
 a:hover {
-    color: #047e63;
+    color: var(--highlight-color)
+}
+
+a {
+    color: var(--fg-color);
+    text-decoration: none
+}
+
+h4 {
+    color: var(--title-color)
 }
 
 input {
-    background: #120024;
+    background: var(--bg-color);
     border: none;
     outline: none;
-    color: #047e63;
+    color: var(--title-color);
     width: 100%;
-    font-weight: bold;
+    font-weight: 700
 }
 
 .btn {
-    color: #ff6000;
-    background: #120024;
-    font-weight: bold;
+    color: var(--title-color);
+    background: var(--bg-color);
+    font-weight: 700
 }
 
 .btn:hover {
-    background: #047e63;
-    color: #120024;
-    font-weight: bold;
+    background: var(--title-color);
+    color: var(--bg-color);
+    font-weight: 700
 }
 
 .date-weather-info {
-    background: #120024;
+    background: var(--bg-color)
 }
 
 .main {
-    width: 640px;
+    width: 640px
 }
 
 .date-weather,
 .search,
 .col {
-    background: #250c3e;
+    background: var(--border-color)
 }
