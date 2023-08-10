@@ -11,4 +11,4 @@ Example: `getWeatherData('Clausthal')` => `getWeatherData('New York')`
 
 ### Screenshot
 
-![Screenshot 2023-01-02 at 10-40-46 Startpage](https://user-images.githubusercontent.com/19970595/210214951-2b26faab-7a68-4de1-8ae8-363984fad764.png)
+![Screenshot 2023-08-10 at 16-07-38 Startpage](https://github.com/lvntcnylmz/startpage/assets/19970595/74f47c4e-61e2-48f1-a61b-0b81728c4805)
