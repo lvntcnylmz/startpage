@@ -1,4 +1,4 @@
-# Purple Startpage
+# Simple Startpage
 Basic startpage. Inspired by various sources from [r/startpage](https://www.reddit.com/r/startpages/). Made with Bootstrap.  
 
 ### Weather
